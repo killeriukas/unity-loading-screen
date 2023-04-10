@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="background" style="background-color: rgb(111, 111, 111); flex-grow: 1;">
+        <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:Label tabindex="-1" text="Loading..." display-tooltip-when-elided="true" name="title" style="color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="footer" style="flex-grow: 1; padding-left: 10%; padding-right: 10%; padding-top: 0; padding-bottom: 0;">
+            <ui:ProgressBar value="22" title="XXX%" />
+            <ui:VisualElement name="footer-center" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); align-items: center;">
+                <ui:Label tabindex="-1" text="Version: x.x.x Alpha" display-tooltip-when-elided="true" name="version" style="color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

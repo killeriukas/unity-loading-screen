@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf5462a628cc1744ea01f0371f8eb75e, type: 3}
+  m_Name: LoggingConfig
+  m_EditorClassIdentifier: 
+  logOutputList:
+  - {fileID: 11400000, guid: f4368ceb334c8124c92389c422c6dae0, type: 2}
+  logSettingsList:
+  - categoryName: TMI.AssetManagement.UIConfigGroup
+    enabled: 0
+  - categoryName: TMI.ConfigManagement.Unity.ConfigManager
+    enabled: 0
+  - categoryName: TMI.ConfigManagement.Unity.UI.BaseUIConfig`1
+    enabled: 0
+  - categoryName: TMI.Core.ExecutionManager
+    enabled: 0
+  - categoryName: TMI.Core.PauseManager
+    enabled: 0
+  - categoryName: TMI.Helper.GeneralHelper
+    enabled: 0
+  - categoryName: TMI.Helper.SerializationHelper
+    enabled: 0
+  - categoryName: TMI.LogManagement.Logging
+    enabled: 0
+  - categoryName: TMI.Notification.NotificationManager
+    enabled: 0
+  - categoryName: TMI.State.StateMachine
+    enabled: 0
+  - categoryName: TMI.UI.BaseUIController
+    enabled: 0
+  - categoryName: TMI.UI.UIComponent
+    enabled: 0
+  - categoryName: TMI.UI.UIManager
+    enabled: 0
+  - categoryName: TMI.UI.UIToolkit.UIManager
+    enabled: 0

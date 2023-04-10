@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="root" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.66); width: auto; flex-direction: column; align-items: center;">
+        <ui:VisualElement name="center" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 50%; flex-direction: column; align-items: stretch; justify-content: center;">
+            <ui:Label tabindex="-1" text="Current Score: XXX" display-tooltip-when-elided="true" name="score-label" style="align-self: center; font-size: 40px; color: rgb(255, 255, 255);" />
+            <ui:VisualElement name="button-container" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); width: 50%; align-self: center;">
+                <ui:Button text="Continue" display-tooltip-when-elided="true" name="continue-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

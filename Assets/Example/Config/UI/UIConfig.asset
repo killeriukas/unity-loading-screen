@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05e70d216340a274ead1430b40516d68, type: 3}
+  m_Name: UIConfig
+  m_EditorClassIdentifier: 
+  permanentUIAssetMap:
+  - label: loading_screen
+    uiPrefab: {fileID: 9041160333127682635, guid: 048d83b3129fd4043893f9282053b82f, type: 3}
+  localUIAssetMap:
+  - label: game_screen
+    uiPrefab: {fileID: 6301410071199223385, guid: ae4559d5296e42c40bd3a5a62d587ea1, type: 3}
+  - label: main_menu_screen
+    uiPrefab: {fileID: 924952496976023011, guid: cdcbb0f92d45c0547a20dc8f9884c766, type: 3}

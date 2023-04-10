@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="root" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column;">
+        <ui:VisualElement name="top-container" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); height: 34px; flex-direction: row;">
+            <ui:VisualElement name="lives-container" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-direction: row; width: 150px; margin-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; height: auto;" />
+            <ui:VisualElement name="spacer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+            <ui:Label tabindex="-1" text="Score: XXX" display-tooltip-when-elided="true" name="score-label" style="font-size: 20px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 5px; padding-bottom: 5px; width: 130px; flex-direction: column; color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="overlay" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); position: absolute; left: 0; top: 0; right: 0; bottom: 0; display: none;" />
+</ui:UXML>

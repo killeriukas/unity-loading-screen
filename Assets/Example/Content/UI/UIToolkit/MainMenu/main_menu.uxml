@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="option_screen" src="project://database/Assets/Content/UI/UIToolkit/MainMenu/option_screen.uxml?fileID=9197481963319205126&amp;guid=fb4fc7ebcbdb2da458c56d6543614d8f&amp;type=3#option_screen" />
+    <ui:VisualElement style="flex-grow: 1; background-color: rgb(121, 202, 255); display: flex;">
+        <ui:VisualElement style="background-color: rgba(0, 0, 0, 0); justify-content: center; flex-grow: 1; padding-left: 40%; padding-right: 40%;">
+            <ui:Button text="Start" display-tooltip-when-elided="true" name="start_button" />
+            <ui:Button text="Options" display-tooltip-when-elided="true" name="option_button" />
+            <ui:Button text="Quit" display-tooltip-when-elided="true" name="quit_button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Instance template="option_screen" name="option_screen" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; display: none;" />
+</ui:UXML>

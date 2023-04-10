@@ -1,0 +1,11 @@
+/Library/
+/Logs/
+/Temp/
+/.vs/
+/obj/
+*.csproj
+*.sln
+/.idea/
+/Assets/Script/.idea/
+/UIElementsSchema/
+/UserSettings/
