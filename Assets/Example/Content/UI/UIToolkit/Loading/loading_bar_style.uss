@@ -1,0 +1,11 @@
+.unity-progress-bar__title {
+    color: rgb(255, 255, 255);
+}
+
+.unity-progress-bar__progress {
+    background-color: rgba(221, 69, 15, 0.92);
+}
+
+.unity-progress-bar__background {
+    background-color: rgb(40, 48, 67);
+}
