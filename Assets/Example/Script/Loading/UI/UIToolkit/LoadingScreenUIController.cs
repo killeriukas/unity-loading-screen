@@ -1,7 +1,6 @@
 ﻿using TMI.AssetManagement;
 using TMI.Core;
 using TMI.UI.UIToolkit;
-using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace Example.UI.UIToolkit {
@@ -9,31 +8,7 @@ namespace Example.UI.UIToolkit {
     public class LoadingScreenUIController : UIController, IUpdatable {
 
         private Label versionText;
-        
-        
-        
-        // [SerializeField]
-        // private UITextPro loadingText;
-        //
-        // [SerializeField]
-        // private UISlider loadingBar;
-
-        // [SerializeField]
-        // private UITextPro versionText;
-
-        private const string defaultLoadingText = "Loading...";
-
-        // public string text {
-        //     set {
-        //         loadingText.text = value;
-        //     }
-        // }
-        //
-        // public float loadingBarValue {
-        //     set {
-        //         loadingBar.value = value;
-        //     }
-        // }
+        private ProgressBar loadingBar;
 
         public string version {
             set {
@@ -41,11 +16,11 @@ namespace Example.UI.UIToolkit {
             }
         }
 
-        // public override void Refresh() {
-        //     base.Refresh();
-        //     loadingText.text = defaultLoadingText;
-        //     loadingBarValue = 0f;
-        // }
+        public override void Refresh() {
+            base.Refresh();
+            loadingBar.value = 0f;
+            loadingBar.title = "0%";
+        }
 
         private IExecutionManager executionManager;
         private IHandle handle;
@@ -54,6 +29,7 @@ namespace Example.UI.UIToolkit {
             base.Setup(initializer);
             this.executionManager = initializer.GetManager<ExecutionManager, IExecutionManager>();
             versionText = rootVisualElement.Q<Label>("version");
+            loadingBar = rootVisualElement.Q<ProgressBar>("loading");
         }
 
         public void Setup(IHandle handle) {
@@ -63,7 +39,8 @@ namespace Example.UI.UIToolkit {
 
         private ExecutionManager.Result OnUpdate() {
             float progress = handle.progress;
-           // loadingBarValue = progress;
+            loadingBar.value = progress * 100f;
+            loadingBar.title = (int)loadingBar.value + "%";
             if(progress < 1f) {
                 return ExecutionManager.Result.Continue;
             } else {
